@@ -10,7 +10,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/surveystyles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,5 +18,180 @@
         <![endif]-->
         
         <script src="" async defer></script>
+        <main>
+            <div class="container">
+            <header class="header-container">
+              <img class="head-logo" src="https://learntocodequickly.com/wp-content/uploads/2021/01/nakatomi-logo.png">
+              <h1 id="title">Is <span style="color: #BE2026">Die Hard</span> the Greatest Movie of All Time?</h1>
+              <p id="description" class="text-center">
+                Amidst these uncertain times, we present a series of weighty and pressing questions to our fellow citizens for their consideration, seeking forthright responses for the advancement of knowledge and the betterment of mankind.
+              </p>
+            </header>
+            <form id="survey-form">
+              <div class="form-container">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number"
+                  >What is the Minimum Number of Times You Feel a Person Should Watch the Movie "Die Hard" Over the Course of Their Lifetime?<span class="clue"></span></label>
+                <input
+                  type="number"
+                  name="views"
+                  id="number"
+                  min="150"
+                  max="21212121212121212121212121212121212121212121212121"
+                  class="form-control"
+                  placeholder="Please select"
+                />
+              </div>
+              <div class="form-group">
+                <p>Which option best describes your attitude towards the movie?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select the term that best describes your attitude towards the movie.</option>
+                  <option value="student">It is the greatest movie of all time.</option>
+                  <option value="job">It is not not the greatest movie of all time.</option>
+                  <option value="learner">Language is just a collection of words and no words are capable of adequately describing my appreciation and reverence for this film.</option>
+                  <option value="preferNo">I named my firstborn child after a character in this movie.</option>
+                  <option value="other">I legally changed my name to Detective Lieutenant John McClane and I preface everything I say with "Yippee Ki Yay."</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Would you recommend Die Hard to a friend?</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Yes</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                  />Of course</label
+                >
+          
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                  />N/A - I am only friends with people who already appreciate this movie.</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  Who is your favourite character in Die Hard?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="challenges">John McClane</option>
+                  <option value="projects">Holly Genero</option>
+                  <option value="community">Hans Gruber</option>
+                  <option value="openSource">Richard Thornburg</option>
+                  <option value="openSource">Karl Vreski</option>
+                  <option value="openSource">Al Powell</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  What would you like to see improved about the movie?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Excuse me?</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="back-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />No seriously, excuse me?</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="data-visualization"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />There is no improving Die Hard.</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="challenges"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Go wash your mouth out with soap for asking this question.</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="open-source-community"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />This movie is the pinnacle of cinematic achievment.</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="gitter-help-rooms"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Perfection by definition cannot be improved upon.</label
+                >
+                  </div>
+          
+              <div class="form-group">
+                <p>Please provide an explanation of the reasons why you agree Die Hard is the greatest film ever made.</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="We strongly suggest providing a response of 2,000 words minimum, excluding references and footnotes, AP Style preferred."
+                ></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="Yipee Ki Yay" id="submit" class="button-end">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+    </main>  
     </body>
 </html>
